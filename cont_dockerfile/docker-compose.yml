@@ -1,0 +1,9 @@
+version: '3'
+services:
+  servidorweb2:
+    build: .
+    container_name: servidorweb2
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - 87:80
